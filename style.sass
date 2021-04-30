@@ -1,0 +1,81 @@
+body
+    margin: 0
+    background-color: #f3b406
+    color: #189e76
+    font-weight: bold
+#form
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    height: 70vh
+    width: 60vw
+    margin: auto
+    gap: 2rem
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    position: absolute
+    input
+        height: 4rem
+        width: 100%
+        color: #189e76
+        padding-left: 2rem
+    input[type='checkbox']
+        width: 5%
+        height: 1rem
+
+    button
+        width: 15rem
+        height: 5rem
+        color: white
+        border: 1px solid white
+        background: #0ea376
+#check
+    display: flex
+    justify-content: center
+    width: 100%
+    margin: 0 auto
+    color: #189e76
+    a
+        color: #189e76
+nav
+    position: absolute
+    top: 3vh
+    right: 3vw
+    background-color: #0ea376
+    border-radius: 50%
+
+.burger
+    display: flex
+    justify-content: center
+    flex-direction: column
+    padding: 2rem 1.7rem
+    gap: 0.5rem
+
+    & span
+        width: 3rem
+        height: 0.5rem
+        background-color: white
+
+@media screen and (max-width: 600px)
+#form
+    flex-direction: row
+    width: 80vw
+    height: 60vh
+    top: 40%
+    h1
+        align-self: right
+    input
+        height: 3rem
+    input[type='checkbox']
+        width: 10%
+        height: 1rem
+.burger
+    padding: 1rem 0.7rem
+    gap: 0.2rem
+    & span
+        width: 2.0rem
+        height: 0.3rem
+        background-color: white
